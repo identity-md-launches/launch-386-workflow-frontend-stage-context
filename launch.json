@@ -1,0 +1,25 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "SwapRateLimitHook",
+    "constructorArgs": [
+      "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+    ],
+    "permissions": [
+      "beforeSwap"
+    ]
+  },
+  "token": {
+    "contract": "Ratelimit",
+    "name": "Ratelimit",
+    "symbol": "RATE",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79061913993278860732495193206006"
+  },
+  "notes": "Sepolia implementation: src/SwapRateLimitHook.sol and src/Ratelimit.sol; ABI exports: docs/abi/SwapRateLimitHook.json and docs/abi/Ratelimit.json. The hook extends BaseHook and takes exactly one IPoolManager argument, the Sepolia PoolManager. The token takes no constructor arguments. getHookPermissions enables only beforeSwap; the hook address must carry exactly 0x0080 in its low 14 bits. Only the PoolManager may call the hook. It permits at most three swaps per PoolId per block, regardless of router, sender, direction, size or hookData. The fourth swap reverts RateLimited(blockNumber); a batch exceeding the remaining slots reverts as a whole. Each accepted swap emits SwapCounted(poolId, blockNumber, count); reverted swaps leave no event. swapsInBlock reports the current block, used slots and remaining slots, resetting the effective count in a new block. Liquidity changes and donations are uncounted. The hook returns zero deltas and no fee override, and has no admin. The launch pool has native ETH as currency0 and RATE as currency1, with static LP fee 3000 and tick spacing 60. initialPrice is decimal sqrtPriceX96 = TickMath.getSqrtPriceAtTick(138120), matching test/LaunchRehearsal.t.sol, approximately 995807.700398 RATE per ETH. The rehearsal seeds RATE-only liquidity below that opening price and exercises a first buy into an ETH-less pool followed by a sell. Any pool on the configured PoolManager may attach the hook and is limited independently. Anyone can exhaust the three slots with dust swaps; this is a Sepolia rate-limit demo, not spam or MEV protection."
+}
