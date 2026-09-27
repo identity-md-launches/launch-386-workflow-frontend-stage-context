@@ -1,0 +1,66 @@
+[
+  {
+    "selector": ".intro-copy p",
+    "property": "color",
+    "foreground": "rgb(91, 101, 90)",
+    "background": "rgb(245, 245, 240)",
+    "minimum": 4.5,
+    "ratio": 5.559367260464004
+  },
+  {
+    "selector": ".swap-panel .subtext",
+    "property": "color",
+    "foreground": "rgb(91, 101, 90)",
+    "background": "rgb(255, 255, 255)",
+    "minimum": 4.5,
+    "ratio": 6.080015583855153
+  },
+  {
+    "selector": ".primary",
+    "property": "color",
+    "foreground": "rgb(255, 255, 255)",
+    "background": "rgb(54, 81, 58)",
+    "minimum": 4.5,
+    "ratio": 8.76854744043181
+  },
+  {
+    "selector": ".slot.filled b",
+    "property": "color",
+    "foreground": "rgb(255, 255, 255)",
+    "background": "rgb(54, 81, 58)",
+    "minimum": 4.5,
+    "ratio": 8.76854744043181
+  },
+  {
+    "selector": ".limit-tag",
+    "property": "color",
+    "foreground": "rgb(113, 80, 27)",
+    "background": "rgb(251, 240, 216)",
+    "minimum": 4.5,
+    "ratio": 6.476318321660866
+  },
+  {
+    "selector": ".amount-box",
+    "property": "borderTopColor",
+    "foreground": "rgb(124, 136, 121)",
+    "background": "rgb(245, 245, 240)",
+    "minimum": 3,
+    "ratio": 3.395662715843096
+  },
+  {
+    "selector": ".percent-input",
+    "property": "borderTopColor",
+    "foreground": "rgb(124, 136, 121)",
+    "background": "rgb(255, 255, 255)",
+    "minimum": 3,
+    "ratio": 3.713674823511979
+  },
+  {
+    "selector": "#amount",
+    "property": "outlineColor",
+    "foreground": "rgb(54, 81, 58)",
+    "background": "rgb(245, 245, 240)",
+    "minimum": 3,
+    "ratio": 8.017672798669487
+  }
+]

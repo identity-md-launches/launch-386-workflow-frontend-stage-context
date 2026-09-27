@@ -1,0 +1,52 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-239-swapratelimithook",
+  "version": 1,
+  "launchId": "fb56b990-1abf-4252-b81f-460ea366728a",
+  "manifest": {
+    "hook": {
+      "contract": "SwapRateLimitHook",
+      "permissions": [
+        "beforeSwap"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79061913993278860732495193206006",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia implementation: src/SwapRateLimitHook.sol and src/Ratelimit.sol; ABI exports: docs/abi/SwapRateLimitHook.json and docs/abi/Ratelimit.json. The hook extends BaseHook and takes exactly one IPoolManager argument, the Sepolia PoolManager. The token takes no constructor arguments. getHookPermissions enables only beforeSwap; the hook address must carry exactly 0x0080 in its low 14 bits. Only the PoolManager may call the hook. It permits at most three swaps per PoolId per block, regardless of router, sender, direction, size or hookData. The fourth swap reverts RateLimited(blockNumber); a batch exceeding the remaining slots reverts as a whole. Each accepted swap emits SwapCounted(poolId, blockNumber, count); reverted swaps leave no event. swapsInBlock reports the current block, used slots and remaining slots, resetting the effective count in a new block. Liquidity changes and donations are uncounted. The hook returns zero deltas and no fee override, and has no admin. The launch pool has native ETH as currency0 and RATE as currency1, with static LP fee 3000 and tick spacing 60. initialPrice is decimal sqrtPriceX96 = TickMath.getSqrtPriceAtTick(138120), matching test/LaunchRehearsal.t.sol, approximately 995807.700398 RATE per ETH. The rehearsal seeds RATE-only liquidity below that opening price and exercises a first buy into an ETH-less pool followed by a sell. Any pool on the configured PoolManager may attach the hook and is limited independently. Anyone can exhaust the three slots with dust swaps; this is a Sepolia rate-limit demo, not spam or MEV protection.",
+    "token": {
+      "name": "Ratelimit",
+      "symbol": "RATE",
+      "contract": "Ratelimit",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "Ratelimit",
+      "txHash": "0x21791b11e711439d2795b0a9c1874cecdb7016f2f62596d5cc516ebaf1136ab3",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0x14ca885130e76c69ba66e8bf79aa587753623eb4",
+      "blockNumber": 11791637,
+      "creationCodeHash": "bf239888483d0a0f457d3cad435cbfb62b42f6700f4ae05ee690ce847cddc4de"
+    },
+    {
+      "name": "SwapRateLimitHook",
+      "txHash": "0x21791b11e711439d2795b0a9c1874cecdb7016f2f62596d5cc516ebaf1136ab3",
+      "abiHash": "21f0e7449c6d0c2233fcbdd791cb95a228dd9c15e2798ff91ee91022afe0077a",
+      "address": "0x0ecc3290c45024db384cfef636ae691c0200c080",
+      "blockNumber": 11791637,
+      "creationCodeHash": "80074b04d136f4b5e6ade68cb6ae334feec82a49a8947c22359373fe8930ca64"
+    }
+  ],
+  "sourceCommit": "c723c7a12a2e813310788a5f69fa37cc9bbab7b0",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "51378e3f30952c9d76f2edb26560113caf33303956ec7fb1ff979d7d6c0bb908"
+}

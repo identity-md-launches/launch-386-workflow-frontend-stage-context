@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-09-27T07:21:26.590Z",
+  "method": "Read-only JSON-RPC. No transactions sent.",
+  "results": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "block": "11791802",
+      "code": [
+        {
+          "name": "Ratelimit",
+          "address": "0x14ca885130e76c69ba66e8bf79aa587753623eb4",
+          "bytes": 2469
+        },
+        {
+          "name": "SwapRateLimitHook",
+          "address": "0x0ecc3290c45024db384cfef636ae691c0200c080",
+          "bytes": 3451
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "universalRouter",
+          "address": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+          "bytes": 19540
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "positionManager",
+          "address": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+          "bytes": 23877
+        },
+        {
+          "name": "permit2",
+          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+          "bytes": 9152
+        }
+      ],
+      "poolId": "0xdd6442ab3028bf8e76d7404ca6ed9175d5625e921c69cf2af49c5d012a297bcd",
+      "slots": [
+        "11791802",
+        0,
+        3
+      ],
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "quoteFor0000001ETH": [
+        "49630160823989818792",
+        "115824"
+      ],
+      "result": "pass"
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111,
+      "block": "11791801",
+      "code": [
+        {
+          "name": "Ratelimit",
+          "address": "0x14ca885130e76c69ba66e8bf79aa587753623eb4",
+          "bytes": 2469
+        },
+        {
+          "name": "SwapRateLimitHook",
+          "address": "0x0ecc3290c45024db384cfef636ae691c0200c080",
+          "bytes": 3451
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "universalRouter",
+          "address": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+          "bytes": 19540
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "positionManager",
+          "address": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+          "bytes": 23877
+        },
+        {
+          "name": "permit2",
+          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+          "bytes": 9152
+        }
+      ],
+      "poolId": "0xdd6442ab3028bf8e76d7404ca6ed9175d5625e921c69cf2af49c5d012a297bcd",
+      "slots": [
+        "11791801",
+        0,
+        3
+      ],
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "quoteFor0000001ETH": [
+        "49630160823989818792",
+        "115824"
+      ],
+      "result": "pass"
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111,
+      "block": "11791801",
+      "code": [
+        {
+          "name": "Ratelimit",
+          "address": "0x14ca885130e76c69ba66e8bf79aa587753623eb4",
+          "bytes": 2469
+        },
+        {
+          "name": "SwapRateLimitHook",
+          "address": "0x0ecc3290c45024db384cfef636ae691c0200c080",
+          "bytes": 3451
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "universalRouter",
+          "address": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+          "bytes": 19540
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "positionManager",
+          "address": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+          "bytes": 23877
+        },
+        {
+          "name": "permit2",
+          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+          "bytes": 9152
+        }
+      ],
+      "poolId": "0xdd6442ab3028bf8e76d7404ca6ed9175d5625e921c69cf2af49c5d012a297bcd",
+      "slots": [
+        "11791801",
+        0,
+        3
+      ],
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "quoteFor0000001ETH": [
+        "49630160823989818792",
+        "115824"
+      ],
+      "result": "pass"
+    }
+  ]
+}

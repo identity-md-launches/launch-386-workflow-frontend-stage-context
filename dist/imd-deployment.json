@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "launchId": "fb56b990-1abf-4252-b81f-460ea366728a",
+  "chainId": 11155111,
+  "sourceCommit": "c723c7a12a2e813310788a5f69fa37cc9bbab7b0",
+  "attestationHash": "51378e3f30952c9d76f2edb26560113caf33303956ec7fb1ff979d7d6c0bb908",
+  "contracts": [
+    {
+      "name": "Ratelimit",
+      "address": "0x14ca885130e76c69ba66e8bf79aa587753623eb4",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "abiPath": "abi/Ratelimit.json"
+    },
+    {
+      "name": "SwapRateLimitHook",
+      "address": "0x0ecc3290c45024db384cfef636ae691c0200c080",
+      "abiHash": "21f0e7449c6d0c2233fcbdd791cb95a228dd9c15e2798ff91ee91022afe0077a",
+      "abiPath": "abi/SwapRateLimitHook.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/PoolSwapTest.json",
+      "sha256": "c67e6d7d656c53fd392c1314b3d6a2639ee430e787be3ef11eb8d87cd6494eee"
+    },
+    {
+      "path": "abi/Ratelimit.json",
+      "sha256": "c0dab602694964041a5c7124536ce5fe6c9d1d057c2f202b73f659a1e1adb554"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "a47cc2431d92c7fc66a9667a48b0a936702296e27f3194a97967082ec5f66cc6"
+    },
+    {
+      "path": "abi/SwapRateLimitHook.json",
+      "sha256": "160be1401adc00047ccab006b3374d7cff22eb1e1440979f9332049dc75f232d"
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "sha256": "7f7fc4ea986a47c4fa51210389fe1d8799df5c506433644676d1b34e29256653"
+    },
+    {
+      "path": "assets/ccip-CmJxKiIK.js",
+      "sha256": "2a1dfda0ac09c42fceece47529bc8825f71c7957332b9cb5e64119acdd90279c"
+    },
+    {
+      "path": "assets/index-CM1tppQh.css",
+      "sha256": "bb00f859ecc353e15b5552ebedc02011021919c9537781a56015ff35e8817cea"
+    },
+    {
+      "path": "assets/index-xyxPE6qk.js",
+      "sha256": "b04cda341665d48c0d8b3abe3791a67ae3fd958622285287fbd77e6a65ff180d"
+    },
+    {
+      "path": "assets/react-Ba7dsKmx.js",
+      "sha256": "4bb22f39bb836b938aecded6e139b89db32a847c3ce6ae16a114baabcc1ed5a8"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9ed65c7e5e3e654d48f46d0faa572bb272a2b6512eaa0c5d97529921945d7302"
+    },
+    {
+      "path": "mark.svg",
+      "sha256": "3f16b4a3ae98ffa00ba0319db4acdc141be9963e95e53b1611bfd131df6c94c1"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79061913993278860732495193206006",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "token": {
+    "name": "Ratelimit",
+    "symbol": "RATE",
+    "contract": "Ratelimit",
+    "decimals": 18
+  },
+  "hook": "SwapRateLimitHook",
+  "deploymentBlock": 11791637,
+  "routing": {
+    "poolSwapTest": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+    "protocolAbis": {
+      "PoolSwapTest": "abi/PoolSwapTest.json",
+      "V4Quoter": "abi/V4Quoter.json",
+      "StateView": "abi/StateView.json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+
+> ratelimit-observatory@1.0.0 build
+> npm run typecheck && vite build && node scripts/export.mjs
+
+
+> ratelimit-observatory@1.0.0 typecheck
+> tsc --noEmit
+
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.1.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.1.0
+npm notice To update run: npm install -g npm@12.1.0
+npm notice
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 451 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                   0.73 kB │ gzip:  0.41 kB
+../dist/assets/index-CM1tppQh.css   14.12 kB │ gzip:  3.68 kB
+../dist/assets/ccip-CmJxKiIK.js      2.92 kB │ gzip:  1.35 kB
+../dist/assets/react-Ba7dsKmx.js   221.16 kB │ gzip: 68.79 kB
+../dist/assets/index-xyxPE6qk.js   320.83 kB │ gzip: 98.71 kB
+✓ built in 1.75s
+Verified Ratelimit: f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577
+Verified SwapRateLimitHook: 21f0e7449c6d0c2233fcbdd791cb95a228dd9c15e2798ff91ee91022afe0077a
+Exported deployment manifest with 11 assets.
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.1.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.1.0
+npm notice To update run: npm install -g npm@12.1.0
+npm notice

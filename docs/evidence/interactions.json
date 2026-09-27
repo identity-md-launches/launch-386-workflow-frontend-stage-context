@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-09-27T07:26:55.276Z",
+  "browser": "141.0.7390.37",
+  "urlPath": "/preview/",
+  "transactions": "All signatures and transaction receipts mocked; no broadcast to Sepolia.",
+  "results": [
+    {
+      "name": "Amount precision, signed delta and integer price-limit boundaries",
+      "result": "pass"
+    },
+    {
+      "name": "Disconnected, live counter, per-block grouping and limit flag",
+      "result": "pass"
+    },
+    {
+      "name": "Keyboard navigation, focused amount field and automated accessibility",
+      "result": "pass",
+      "detail": {
+        "rulesPassed": 29,
+        "violations": 0
+      }
+    },
+    {
+      "name": "Measured rendered text, input boundaries and focus contrast",
+      "result": "pass",
+      "detail": [
+        {
+          "selector": ".intro-copy p",
+          "ratio": 5.56
+        },
+        {
+          "selector": ".swap-panel .subtext",
+          "ratio": 6.08
+        },
+        {
+          "selector": ".primary",
+          "ratio": 8.77
+        },
+        {
+          "selector": ".slot.filled b",
+          "ratio": 8.77
+        },
+        {
+          "selector": ".limit-tag",
+          "ratio": 6.48
+        },
+        {
+          "selector": ".amount-box",
+          "ratio": 3.4
+        },
+        {
+          "selector": ".percent-input",
+          "ratio": 3.71
+        },
+        {
+          "selector": "#amount",
+          "ratio": 8.02
+        }
+      ]
+    },
+    {
+      "name": "Mobile 320px, 390px and intermediate 820px reflow",
+      "result": "pass"
+    },
+    {
+      "name": "Missing-wallet recovery and rejected wallet connection",
+      "result": "pass"
+    },
+    {
+      "name": "Wrong chain and 4902 add-chain fallback uses exact network parameters",
+      "result": "pass"
+    },
+    {
+      "name": "Validation focuses invalid field; full block disables quote",
+      "result": "pass"
+    },
+    {
+      "name": "ETH buy quotes, simulates and submits correct signed swap without approval",
+      "result": "pass"
+    },
+    {
+      "name": "RATE sell requires exact approval to PoolSwapTest and then signs with zero ETH",
+      "result": "pass"
+    },
+    {
+      "name": "Nested RateLimited simulation error prevents wallet submission",
+      "result": "pass"
+    },
+    {
+      "name": "Slots rechecked before signing, even after a successful review",
+      "result": "pass"
+    },
+    {
+      "name": "Partial fill is disclosed; rejected signature is recoverable",
+      "result": "pass"
+    },
+    {
+      "name": "Reverted transaction receipt is marked failed, never confirmed",
+      "result": "pass"
+    },
+    {
+      "name": "Hook data is forwarded; changing amount invalidates quote",
+      "result": "pass"
+    },
+    {
+      "name": "Account change invalidates outstanding quote; expired quote cannot sign",
+      "result": "pass"
+    },
+    {
+      "name": "Empty history, history failure and missing deployed code",
+      "result": "pass"
+    },
+    {
+      "name": "RPC outage never displays a fabricated zero counter",
+      "result": "pass"
+    },
+    {
+      "name": "Corrupted ABI is rejected before pool reads or signing",
+      "result": "pass"
+    },
+    {
+      "name": "Live public-RPC browser read and static subpath resources",
+      "result": "pass",
+      "detail": {
+        "blockText": "BLOCK NUMBER\n11,791,829 ↗\nUpdated 0s ago",
+        "filesLoaded": [
+          "abi/PoolSwapTest.json",
+          "abi/Ratelimit.json",
+          "abi/StateView.json",
+          "abi/SwapRateLimitHook.json",
+          "abi/V4Quoter.json",
+          "assets/ccip-CmJxKiIK.js",
+          "assets/index-CM1tppQh.css",
+          "assets/index-xyxPE6qk.js",
+          "assets/react-Ba7dsKmx.js",
+          "imd-deployment.json",
+          "index.html"
+        ]
+      }
+    }
+  ]
+}
