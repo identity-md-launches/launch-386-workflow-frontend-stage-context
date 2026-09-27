@@ -1,0 +1,33 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+libs = ["lib"]
+
+# v4-core requires 0.8.26 and the cancun EVM (transient storage). Pinned by version, never by path.
+solc = "0.8.26"
+evm_version = "cancun"
+
+# Same pipeline v4-core ships with: PoolManager only fits under EIP-170 when compiled via IR.
+optimizer = true
+optimizer_runs = 44444444
+via_ir = true
+
+# The attested creation code must not carry a metadata hash.
+bytecode_hash = "none"
+
+# No ffi, no filesystem access, no environment reads in tests.
+ffi = false
+fs_permissions = []
+
+gas_limit = "300000000"
+
+[profile.default.fuzz]
+runs = 256
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = false
+int_types = "long"
